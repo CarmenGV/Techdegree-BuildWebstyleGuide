@@ -1,0 +1,26 @@
+.img {
+	//Header Image
+	&--logo {
+		@extend %img-center;
+		margin-bottom: 2.5em;
+	}
+	&--avatar {
+		@extend %img-center;
+		margin-bottom: 2em;
+		@include mq(break){
+			width: 199px;
+			height: 199px;
+		}
+	}
+	&--frame {
+		@extend %img-center;
+		width: 100%;
+		padding: 15px;
+		border: 1px solid $lt-gray;
+		margin-bottom: 2.3em;
+		@include mq(break){
+			width: 512px;
+			height: 250px;
+		}
+	}
+}

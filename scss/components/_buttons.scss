@@ -1,0 +1,30 @@
+//			Buttons
+
+.theme__colors {
+	@extend %btn;
+	margin-bottom: 0.5em;
+}
+
+.btn {
+	@include colors($btn-colors){
+		display: block;
+		width: 95%;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: $font-weight--bolder;
+		margin-bottom: 1.5em;
+		@include mq(break){
+			display: inline-block;
+			width: 15%;
+			padding-left: 3%;
+			padding-right: 3%;
+		}
+	};
+}
+
+.form button {
+	@include mq(break){
+		display: block;
+		width: 100%;
+	}
+}

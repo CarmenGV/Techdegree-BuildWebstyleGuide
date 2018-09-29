@@ -1,0 +1,53 @@
+//		Variables
+
+//Font Family
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,800);
+$font-family--google	: 'Open Sans', sans-serif;
+
+//Font Weight
+$font-weight--thin		: 300;
+$font-weight--regular	: 400;
+$font-weight--bold		: 600;
+$font-weight--bolder	: 700;
+$font-weight--ultra-bold: 800;
+
+//Font Colors
+$text-color--primary	: #808080;
+$text-color--secondary	: #58e1c1;
+$text-color--link		: #51ddfc;
+
+//Font Size
+$font-size--base		: 16px;
+
+//Colors
+$white					: #ffffff;
+$lt-gray				: #cdcdcd;
+$viking-teal			: #58e1c1;
+$maliblu				: #51ddfc;
+
+//Button Colors
+$btn-colors: (
+	default				: #51ddfc,
+	success				: #63cc82,
+	error				: #e4757a,
+	warning				: #fd7856,
+	info				: #927bc1
+);
+
+//Grid Colors
+$grid-colors: (
+	1	: #ec9fd4,
+	2	: #ec8d85,
+	3	: #deb2ee,
+	4	: #7ee6fd, 
+	5	: #88d9a0,
+	6	: #3fabca,
+	7	: #ec9fa3,
+	8	: #fd9f85,
+	9	: #75d5b6,
+	10	: #6571e5,
+	11	: #86e565,
+	12	: #80e8d1
+);
+
+$grid-col-ct: 12;

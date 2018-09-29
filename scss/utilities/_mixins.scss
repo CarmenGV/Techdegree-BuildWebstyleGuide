@@ -1,0 +1,72 @@
+//			Flexbox
+
+@mixin flexbox($display: flex, $direction: null, $wrap: null, $align: null, $justify: null){
+	display: $display;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	align-items: $align;
+	justify-content: $justify;
+	@content;
+}
+
+//			Media Queries
+
+@mixin mq($break) {
+	@if $break == "break" {
+		@media (min-width: 480px){
+			@content;
+		}
+	}
+	@else {
+		@error "Uh-oh, no value could be retrieved for '$break'"
+	}
+}
+
+//			Margin Sides
+@mixin margins($margin-right, $margin-left){
+	margin-right: $margin-right;
+	margin-left: $margin-left;
+}
+
+//			Buttons Each Loop for Colors
+
+@mixin colors($map){
+	@each $theme, $color in $map{
+		&--#{$theme}{
+			background-color: $color;
+			@extend %img-center;
+			@content;
+		}
+	}
+}
+
+//			Grid
+
+@mixin grid-mobile {
+	@for $i from 1 through $grid-col-ct {
+		&--#{$i}{
+			flex: 0 0 100%;
+		}
+	}
+}
+
+@mixin grid-mq{
+	@for $i from 1 through $grid-col-ct {
+		$width: (100% / $grid-col-ct * $i) - 1.2%;
+		&--#{$i}{
+			flex: 0 0 $width;
+			@content;
+		}
+	}
+}
+
+//			Grid Colors
+
+@mixin g-colors($map){
+	@each $theme, $color in $map{
+		&--#{$theme}{
+			background-color: $color;
+			@content;
+		}
+	}
+}

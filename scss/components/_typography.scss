@@ -1,0 +1,51 @@
+//		Container
+.container {
+	font-family: $font-family--google;
+	color: $text-color--primary;
+	@include mq(break){
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+
+//		Card
+.card {
+	& p {
+		line-height: em(28px);
+		color: $text-color--primary;
+		font-weight: $font-weight--regular;
+		@include margins(1em, 1em);
+	}
+	margin-bottom: 5em;
+	
+}
+
+//		Headlines
+.headline {
+	&--primary {
+		@extend %head-primary;
+		margin: 0 2em 1.25em 1.5em;
+	}
+	&--secondary {
+		@extend %head-secondary;
+		margin: 0 1em 1.5em 1.5em;
+	}
+}
+
+//		Links
+.link {
+	@extend %links;
+}
+
+
+//		BlockQuote
+.blockquote {
+	margin: 0 .5em 1em 1.5em;
+	padding-left: .75em;
+	font-size: 1.65em;
+	font-style: italic;
+	line-height: 1.2;
+	border-radius: 5px;
+	border-left: 8px solid $text-color--secondary;
+	
+}

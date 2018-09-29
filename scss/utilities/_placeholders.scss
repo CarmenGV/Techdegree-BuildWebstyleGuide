@@ -1,0 +1,53 @@
+//		Nav Items
+
+%nav-item {
+	text-align: center;
+	font-size: em(18px);
+	width: 95%;
+	margin-bottom: .25em;
+	border-radius: 5px;
+	padding: 1em;
+}
+
+%nav-links {
+	color: $text-color--primary;
+	text-decoration: none;
+	font-weight: $font-weight--regular;
+}
+
+//		Headlines
+
+%head-primary {
+	color: $text-color--secondary;
+	font-weight: $font-weight--bolder;
+	letter-spacing: -1.5px;
+}
+
+%head-secondary {
+	font-family: $font-family--google;
+	font-weight: $font-weight--thin;
+}
+
+//		Links
+
+%links {
+	color: $text-color--link;
+	font-weight: $font-weight--bold;
+	text-decoration: none;
+}
+
+//		Buttons
+
+%btn {
+	padding: .9em 0;
+	border-radius: 5px;
+	background-color: transparent;
+	border: none;
+}
+
+//		Images
+
+%img-center {
+	display: block;
+	margin: 0 auto;
+}

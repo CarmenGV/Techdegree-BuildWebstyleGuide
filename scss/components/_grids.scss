@@ -1,0 +1,27 @@
+//		Grid Loop
+.grid__col {
+	@include grid-mobile;
+	@include mq(break){
+		@include grid-mq{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			@include margins(.6%, .6%);
+		};
+	}
+}
+
+.grid__row {
+	margin: 3em 1.5em;
+	@include flexbox($direction: row, $wrap: wrap);
+	@include mq(break){
+		justify-content: center;
+	}
+}
+
+.theme__colors.grid__col {
+	@include g-colors($grid-colors){
+		font-weight: $font-weight--bold;
+		padding-left: 1em;
+	};
+}

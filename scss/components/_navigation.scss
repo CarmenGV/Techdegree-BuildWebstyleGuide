@@ -1,0 +1,24 @@
+.nav {
+	padding: 0;
+	@include flexbox($direction: column, $align: center);
+	margin-bottom: 2em;
+	@include mq(break){
+		@include flexbox($direction: row, $justify: center);
+	}
+	&__item a {
+		@extend %nav-links;
+	}
+	&__item {
+		@extend %nav-item;
+		@include mq(break){
+			padding: .5em;
+			@include margins (1em, 1em);
+		}
+	}
+	&__item:hover {
+		background-color: $viking-teal;
+		& a {
+			color: $white;
+		}
+	}
+}
